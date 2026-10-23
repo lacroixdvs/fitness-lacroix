@@ -1,0 +1,24 @@
+[project]
+name = "fitness-lacroix-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Nico", email = "nico@example.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "django>=6.1.2",
+    "django-cors-headers>=4.9.0",
+    "django-filter>=26.2",
+    "djangorestframework>=3.18.3",
+    "drf-spectacular>=0.30.0",
+    "pillow>=13.0.0",
+]
+
+[project.scripts]
+fitness-lacroix-backend = "fitness_lacroix_backend:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
